@@ -3,10 +3,13 @@ function errorHandler(err, req, res, next) {
     let msg
 
     switch (err.name) {
-        case value:
-            
+        case "SequelizeValidationError":
+        case "SequelizeUniqueConstraintError":
+        case "SequelizeForeignKeyConstraintError":
+        case "ValidationErrorItem":
+            code = 400,
+            message = err.errors.map(el => el)
             break;
-    
         default:
             code = 500,
             msg = `internal server error`

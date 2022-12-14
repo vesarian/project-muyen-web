@@ -565,7 +565,7 @@
         "id": 62,
         "name": "Honje",
         "price": 48000,
-        "imgUrl": "hahi",
+        "imgUrl": "https://ik.imagekit.io/y94fn933t/Muyen_honje_rice.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671026332537",
         "description": "nasi goreng kecombrang",
         "MainCategoryId": 5,
         "SubCategoryId": 12
