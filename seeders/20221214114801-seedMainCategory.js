@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add seed commands here.
      *
@@ -11,15 +11,23 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
+     */
+    const data = require("../data/maincategory.json").map((el) => {
+      delete el.id;
+      el.createdAt = new Date();
+      el.updatedAt = new Date();
+      return el;
+    });
+    await queryInterface.bulkInsert("MainCategories", data, {});
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-  }
+    await queryInterface.bulkDelete("MainCategories", null, {});
+  },
 };

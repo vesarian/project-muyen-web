@@ -9,6 +9,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Menu.belongsTo(models.MainCategory)
+      Menu.belongsTo(models.SubCategory)
     }
   }
   Menu.init(
