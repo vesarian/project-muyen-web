@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Espresso"
+    },
+    {
+        "id": 2,
+        "name": "Manual Brew"
+    },
+    {
+        "id": 3,
+        "name": "Add Ons"
+    },
+    {
+        "id": 4,
+        "name": "Tea"
+    },
+    {
+        "id": 5,
+        "name": "Shake"
+    },
+    {
+        "id": 6,
+        "name": "Blend"
+    },
+    {
+        "id": 7,
+        "name": "Other"
+    },
+    {
+        "id": 8,
+        "name": "Special Mocktail By Muyen Coffee"
+    },
+    {
+        "id": 9,
+        "name": "Pastry"
+    },
+    {
+        "id": 10,
+        "name": "Dessert"
+    },
+    {
+        "id": 11,
+        "name": "Breakfast"
+    },
+    {
+        "id": 12,
+        "name": "Rice"
+    },
+    {
+        "id": 13,
+        "name": "Pasta"
+    },
+    {
+        "id": 14,
+        "name": "Salad"
+    },
+    {
+        "id": 15,
+        "name": "Recommended"
+    }
+]

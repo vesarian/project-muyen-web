@@ -1,0 +1,654 @@
+[
+    {
+        "id": 1,
+        "name": "Muyen Coffee",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "Kopi aren",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 2,
+        "name": "Pandan Coffee",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "Kopi pandan",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 3,
+        "name": "Butterscotch Regal",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "Kopi butterscotch regal",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 4,
+        "name": "Srirasakaya",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "Kopi srikaya by Rian Adinata",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 5,
+        "name": "Pistachio",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "Kopi pistachio",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 6,
+        "name": "Hazelnut Latte",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "Kopi hazelnut",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 7,
+        "name": "Salted Caramel Macchiato",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "Kopi salted caramel",
+        "status": "Recommended",
+        "MainCategoryId": 1,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 8,
+        "name": "Double Shots Espresso",
+        "price": 20000,
+        "imgUrl": "hahi",
+        "description": "espresso double",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 9,
+        "name": "Americano",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "americano",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 10,
+        "name": "Cappuccino",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "cappuccino",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 11,
+        "name": "Cafe Latte",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "cafe latte",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 12,
+        "name": "Flat White",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "flat white",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 13,
+        "name": "Picollo",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "picollo",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 14,
+        "name": "Affogato",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "kopi pake es krim vanila",
+        "MainCategoryId": 1,
+        "SubCategoryId": 1
+    },
+    {
+        "id": 15,
+        "name": "V60",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "kopi filter v60",
+        "MainCategoryId": 1,
+        "SubCategoryId": 2
+    },
+    {
+        "id": 16,
+        "name": "Vietnam Drip",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "kopi vietnam drip",
+        "MainCategoryId": 1,
+        "SubCategoryId": 2
+    },
+    {
+        "id": 17,
+        "name": "More Espresso",
+        "price": 10000,
+        "imgUrl": "hahi",
+        "description": "extra espresso",
+        "MainCategoryId": 6,
+        "SubCategoryId": 3
+    },
+    {
+        "id": 18,
+        "name": "One Scoop Ice Cream",
+        "price": 10000,
+        "imgUrl": "hahi",
+        "description": "extra ice cream",
+        "MainCategoryId": 6,
+        "SubCategoryId": 3
+    },
+    {
+        "id": 19,
+        "name": "More Flavours",
+        "price": 10000,
+        "imgUrl": "hahi",
+        "description": "extra syrup",
+        "MainCategoryId": 6,
+        "SubCategoryId": 3
+    },
+    {
+        "id": 20,
+        "name": "Whipped Cream",
+        "price": 10000,
+        "imgUrl": "hahi",
+        "description": "extra whipped cream",
+        "MainCategoryId": 6,
+        "SubCategoryId": 3
+    },
+    {
+        "id": 21,
+        "name": "Muyen Signature Tea",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "Teh signature muyen",
+        "MainCategoryId": 2,
+        "SubCategoryId": 4
+    },
+    {
+        "id": 22,
+        "name": "Flavour Tea",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "teh rasa rasa",
+        "MainCategoryId": 2,
+        "SubCategoryId": 4
+    },
+    {
+        "id": 23,
+        "name": "Rosella Tea",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "teh rosella",
+        "MainCategoryId": 2,
+        "SubCategoryId": 4
+    },
+    {
+        "id": 24,
+        "name": "Thai Tea",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "teh tarik thailand",
+        "MainCategoryId": 2,
+        "SubCategoryId": 4
+    },
+    {
+        "id": 25,
+        "name": "Matcha",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "green tea",
+        "MainCategoryId": 2,
+        "SubCategoryId": 5
+    },
+    {
+        "id": 26,
+        "name": "Taro",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "taro",
+        "MainCategoryId": 2,
+        "SubCategoryId": 5
+    },
+    {
+        "id": 27,
+        "name": "Banana",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "banana",
+        "MainCategoryId": 2,
+        "SubCategoryId": 5
+    },
+    {
+        "id": 28,
+        "name": "Chocolate",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "chocolate",
+        "MainCategoryId": 2,
+        "SubCategoryId": 5
+    },
+    {
+        "id": 29,
+        "name": "Oreo Blast",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "oreo blend",
+        "MainCategoryId": 2,
+        "SubCategoryId": 6
+    },
+    {
+        "id": 30,
+        "name": "Choco Java Chips",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "choco blend with choco chips",
+        "MainCategoryId": 2,
+        "SubCategoryId": 6
+    },
+    {
+        "id": 31,
+        "name": "Green Tea Frappucino",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "matcha blend with whipped cream",
+        "MainCategoryId": 2,
+        "SubCategoryId": 6
+    },
+    {
+        "id": 32,
+        "name": "Smooth Berry",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "berry blend",
+        "MainCategoryId": 2,
+        "SubCategoryId": 6
+    },
+    {
+        "id": 33,
+        "name": "Mineral Water",
+        "price": 15000,
+        "imgUrl": "hahi",
+        "description": "mineral water",
+        "MainCategoryId": 2,
+        "SubCategoryId": 7
+    },
+    {
+        "id": 34,
+        "name": "Magic Purple",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "minuman ungu",
+        "MainCategoryId": 3,
+        "SubCategoryId": 8
+    },
+    {
+        "id": 35,
+        "name": "Green Forest",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "rasa hutan",
+        "MainCategoryId": 3,
+        "SubCategoryId": 8
+    },
+    {
+        "id": 36,
+        "name": "Rujak",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "asem pedes kek rujak",
+        "MainCategoryId": 3,
+        "SubCategoryId": 8
+    },
+    {
+        "id": 37,
+        "name": "Red Summer",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "minuman merah",
+        "MainCategoryId": 3,
+        "SubCategoryId": 8
+    },
+    {
+        "id": 38,
+        "name": "Classic Mojito",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "mojito",
+        "MainCategoryId": 3,
+        "SubCategoryId": 8
+    },
+    {
+        "id": 39,
+        "name": "Chicken Skin",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "kulit ayam",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 40,
+        "name": "Chicken Wing",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "sayap ayam",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 41,
+        "name": "French Fries",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "kentang goreng",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 42,
+        "name": "Dimsum",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "dimsum (ori/nori/mix)",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 43,
+        "name": "Banana Fritters",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "pisang manis",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 44,
+        "name": "Nachos",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "nachos",
+        "status": "Recommended",
+        "MainCategoryId": 4,
+        "SubCategoryId": 15
+    },
+    {
+        "id": 45,
+        "name": "Butter Croissant",
+        "price": 20000,
+        "imgUrl": "hahi",
+        "description": "croissant plain",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 46,
+        "name": "Bomboloni Chocolate",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "roti isi coklat",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 47,
+        "name": "Cinnamon Roll",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "croissant cinnamon",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 48,
+        "name": "Nutella Croissant",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "croissant nutella",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 49,
+        "name": "Quiche Croissant",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "croissant quiche",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 50,
+        "name": "Almond Croissant",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "croissant almond",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 51,
+        "name": "Beef Sausage",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "roti sosis",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 52,
+        "name": "Banana Nutella",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "roti pisang nutella",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 53,
+        "name": "Smoked Beef",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "roti sapi panggang",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 54,
+        "name": "Triple Cheese Croissant",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "croissant keju",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 55,
+        "name": "Cheese Cake Danish",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "cheese cake",
+        "MainCategoryId": 4,
+        "SubCategoryId": 9
+    },
+    {
+        "id": 56,
+        "name": "Ice Cream",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "ice cream vanilla 3 scoop",
+        "MainCategoryId": 4,
+        "SubCategoryId": 10
+    },
+    {
+        "id": 57,
+        "name": "Sundae",
+        "price": 35000,
+        "imgUrl": "hahi",
+        "description": "sundae ice cream",
+        "MainCategoryId": 4,
+        "SubCategoryId": 10
+    },
+    {
+        "id": 58,
+        "name": "Big Breakfast",
+        "price": 55000,
+        "imgUrl": "hahi",
+        "description": "american style breakfast",
+        "MainCategoryId": 5,
+        "SubCategoryId": 11
+    },
+    {
+        "id": 59,
+        "name": "Muyen Toast",
+        "price": 30000,
+        "imgUrl": "hahi",
+        "description": "roti bakar pisang saus caramel khas muys",
+        "MainCategoryId": 5,
+        "SubCategoryId": 11
+    },
+    {
+        "id": 60,
+        "name": "Teriyaki Rice Bowl",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "rice bowl teriyaki",
+        "MainCategoryId": 5,
+        "SubCategoryId": 12
+    },
+    {
+        "id": 61,
+        "name": "Anchovies",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "nasi goreng teri",
+        "MainCategoryId": 5,
+        "SubCategoryId": 12
+    },
+    {
+        "id": 62,
+        "name": "Honje",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "nasi goreng kecombrang",
+        "MainCategoryId": 5,
+        "SubCategoryId": 12
+    },
+    {
+        "id": 63,
+        "name": "Rawon",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "nasi goreng rawon",
+        "MainCategoryId": 5,
+        "SubCategoryId": 12
+    },
+    {
+        "id": 64,
+        "name": "Pesto Rice With Grilled Chicken",
+        "price": 55000,
+        "imgUrl": "hahi",
+        "description": "nasi goreng pesto",
+        "MainCategoryId": 5,
+        "SubCategoryId": 12
+    },
+    {
+        "id": 65,
+        "name": "Honje",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "pasta kecombrang",
+        "MainCategoryId": 5,
+        "SubCategoryId": 13
+    },
+    {
+        "id": 66,
+        "name": "Aglio Olio",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "pasta aglio",
+        "MainCategoryId": 5,
+        "SubCategoryId": 13
+    },
+    {
+        "id": 67,
+        "name": "Bolognaise",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "pasta bolognaise",
+        "MainCategoryId": 5,
+        "SubCategoryId": 13
+    },
+    {
+        "id": 68,
+        "name": "Creamy Carbonara",
+        "price": 48000,
+        "imgUrl": "hahi",
+        "description": "pasta creamy carbonara",
+        "MainCategoryId": 5,
+        "SubCategoryId": 13
+    },
+    {
+        "id": 69,
+        "name": "Creamy Truffle",
+        "price": 55000,
+        "imgUrl": "hahi",
+        "description": "pasta saus truffle creamy",
+        "MainCategoryId": 5,
+        "SubCategoryId": 13
+    },
+    {
+        "id": 70,
+        "name": "Caesar Salad",
+        "price": 45000,
+        "imgUrl": "hahi",
+        "description": "salad caesar",
+        "MainCategoryId": 5,
+        "SubCategoryId": 14
+    },
+    {
+        "id": 71,
+        "name": "Farmer Salad",
+        "price": 40000,
+        "imgUrl": "hahi",
+        "description": "salad farmer",
+        "MainCategoryId": 5,
+        "SubCategoryId": 14
+    }
+]
