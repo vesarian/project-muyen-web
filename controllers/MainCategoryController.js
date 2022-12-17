@@ -15,10 +15,12 @@ class MainCategoryControl {
     try {
       const { id } = req.params;
       const main = await MainCategory.findByPk(id);
+      if(!id) throw {name: "notFound"}
       res.status(200).json(main);
     } catch (err) {
       console.log(err);
-      res.status(400).json(err)
+      // res.status(400).json(err)
+      next(err)
     }
   }
 }
