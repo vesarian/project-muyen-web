@@ -1,24 +1,34 @@
-const { SubCategory } = require("../models/");
+const { SubCategory, Menu } = require("../models/");
 
 class SubCategoryControl {
   static async read(req, res, next) {
     try {
-        const sub = await SubCategory.findAll()
-        res.status(200).json(sub)
+      const sub = await SubCategory.findAll()
+      if (!sub) {
+        throw { "name": "SequelizeDatabaseError" }
+      }
+      res.status(200).json(sub)
     } catch (err) {
-      console.log(err);
-      res.status(400).json(err);
+      next(err)
     }
   }
 
   static async detail(req, res, next) {
     try {
       const { id } = req.params;
-      const sub = await SubCategory.findByPk(id);
-      res.status(200).json(sub);
+      const getMenuSub = await Menu.findAll({
+        where: {
+          "SubCategoryId": id
+        }
+      })
+
+      if (!getMenuSub) {
+        throw { "name": "SequelizeDatabaseError" }
+      }
+
+      res.status(200).json(getMenuSub)
     } catch (err) {
-      console.log(err);
-      res.status(400).json(err)
+      next(err)
     }
   }
 }
