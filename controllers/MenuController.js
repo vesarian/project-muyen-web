@@ -15,10 +15,13 @@ class MenuControl {
           },
         ],
       });
+
+      if (!menu) {
+        throw { "name": "SequelizeDatabaseError" }
+      }
       res.status(200).json(menu);
     } catch (err) {
-      console.log(err);
-      res.status(400).json(err);
+      next(err)
     }
   }
 
@@ -26,11 +29,12 @@ class MenuControl {
     try {
       const { id } = req.params;
       const menu = await Menu.findByPk(id);
-      res.status(200).json(menu);
-      if (!id) throw { name: "notFound" };
+      if (!menu) {
+        throw { "name": "SequelizeDatabaseError" }
+      }
+      res.status(200).json(menu)
     } catch (err) {
-      console.log(err);
-      res.status(400).json(err);
+      next(err)
     }
   }
 }

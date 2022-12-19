@@ -11,4 +11,6 @@ router.get("/categories/main/:id", MainCategoryControl.detail);
 router.get("/categories/sub/:id", SubCategoryControl.detail);
 router.get("/menus/:id", MenuControl.detail);
 
+
+
 module.exports = router;
