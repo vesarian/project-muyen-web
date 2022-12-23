@@ -5,7 +5,7 @@ const MenuControl = require("../controllers/MenuController");
 
 router.get("/categories/main", MainCategoryControl.read);
 router.get("/categories/sub", SubCategoryControl.read);
-router.get("/menus", MenuControl.read);
+router.get("/menus", MenuControl.pagination);
 
 router.get("/categories/main/:id", MainCategoryControl.detail);
 router.get("/categories/sub/:id", SubCategoryControl.detail);
