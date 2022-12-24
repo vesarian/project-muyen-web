@@ -44,10 +44,10 @@ class MenuControl {
           attributes: ["name"],
         },
       });
-      res.status(200).json(menu)
+      res.status(200).json(menu);
     } catch (err) {
       console.log(err);
-      next(err)
+      next(err);
     }
   }
 
@@ -56,11 +56,11 @@ class MenuControl {
       const { id } = req.params;
       const menu = await Menu.findByPk(id);
       if (!menu) {
-        throw { "name": "SequelizeDatabaseError" }
+        throw { name: "SequelizeDatabaseError" };
       }
-      res.status(200).json(menu)
+      res.status(200).json(menu);
     } catch (err) {
-      next(err)
+      next(err);
     }
   }
 }
