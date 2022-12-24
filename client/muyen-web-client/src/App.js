@@ -1,34 +1,38 @@
-import React, { Component } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import { NavbarComponent, CardComponent, CarouselComponent, FilterButton } from './components';
-import { API_URL } from './utils/apilink';
-import axios from 'axios';
-
-
+import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import {
+  NavbarComponent,
+  CardComponent,
+  CarouselComponent,
+  FilterButton,
+} from "./components";
+import { API_URL } from "./utils/apilink";
+import axios from "axios";
 
 export default class App extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       menus: [],
-    }
+    };
   }
 
   componentDidMount() {
-    axios.get(`${API_URL}/menus`)
-      .then(res => {
-        const menus = res.data;
-        console.log(menus)
+    axios
+      .get(`${API_URL}/menus`)
+      .then((res) => {
+        const menus = res.data.rows;
+        // console.log(menus, 'ini fetch menus axios')
         this.setState({ menus });
       })
-      .catch(err => {
-        console.log(err)
-      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   render() {
-    const { menus } = this.state
+    const { menus } = this.state;
     return (
       <div className="App">
         <NavbarComponent />
@@ -38,31 +42,24 @@ export default class App extends Component {
               <CarouselComponent />
             </Col>
             <Col>
-              <Row className='justify-content-md-center'>
+              <Row className="justify-content-md-center">
                 <Col>
-                  <h1>
-                    Our Menu
-                  </h1>
-                  <Row >
+                  <h1>Our Menu</h1>
+                  <Row>
                     <FilterButton />
                   </Row>
                   <Row>
-                    {menus && menus.map((menu) => (
-                      <CardComponent
-                        key={menu.id}
-                        menu={menu}
-                      />
-                    ))}
+                    {menus &&
+                      menus.map((menu) => (
+                        <CardComponent key={menu.id} menu={menu} />
+                      ))}
                   </Row>
                 </Col>
-
               </Row>
             </Col>
           </Row>
-        </Container >
-
-
-      </div >
-    )
+        </Container>
+      </div>
+    );
   }
 }
