@@ -32,7 +32,7 @@ class MenuControl {
       let filter = { status: "Available" };
       if (MainCategoryId) filter.MainCategoryId = MainCategoryId;
 
-      let limit = 8;
+      let limit = 9;
       let pagination = page ? page * limit : 0;
 
       const menu = await Menu.findAndCountAll({
