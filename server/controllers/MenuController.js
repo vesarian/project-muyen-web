@@ -26,27 +26,61 @@ class MenuControl {
   // }
 
   static async pagination(req, res, next) {
+    // try {
+    //   const { page, MainCategoryId } = req.query;
+
+    //   let filter = { status: "Available" };
+    //   if (MainCategoryId) filter.MainCategoryId = MainCategoryId;
+
+    //   let limit = 9;
+    //   let pagination = page ? page * limit : 0;
+
+    //   const menu = await Menu.findAndCountAll({
+    //     limit,
+    //     offset: pagination,
+    //     where: filter,
+    //     include: [
+    //       {
+    //         model: MainCategory,
+    //         attributes: ["name"],
+    //       },
+    //       {
+    //         model: SubCategory,
+    //         attributes: ["name"],
+    //       },
+    //     ],
+    //   });
+    //   res.status(200).json(menu);
+    // } catch (err) {
+    //   console.log(err);
+    //   next(err);
+    // }
+
     try {
-      const { page, MainCategoryId } = req.query;
-
-      let filter = { status: "Available" };
-      if (MainCategoryId) filter.MainCategoryId = MainCategoryId;
-
+      const { page, filter } = req.query;
       let limit = 9;
       let pagination = page ? page * limit : 0;
-
-      const menu = await Menu.findAndCountAll({
+      let options = {
         limit,
         offset: pagination,
-        where: filter,
-        include: {
-          model: MainCategory,
-          attributes: ["name"],
-        },
-      });
+        where: {},
+        include: [
+          {
+            model: MainCategory,
+            attributes: ["name"],
+          },
+          {
+            model: SubCategory,
+            attributes: ["name"],
+          },
+        ],
+      };
+
+      if (filter) options.where.MainCategoryId = filter;
+
+      const menu = await Menu.findAndCountAll(options);
       res.status(200).json(menu);
     } catch (err) {
-      console.log(err);
       next(err);
     }
   }
