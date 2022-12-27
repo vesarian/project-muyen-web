@@ -5,6 +5,7 @@ import {
   CardComponent,
   CarouselComponent,
   FilterButton,
+  PaginationComponent,
 } from "./components";
 import { API_URL } from "./utils/apilink";
 import axios from "axios";
@@ -15,24 +16,37 @@ export default class App extends Component {
 
     this.state = {
       menus: [],
+      category: [],
     };
   }
 
   componentDidMount() {
     axios
-      .get(`${API_URL}/menus`)
+      .get(`${API_URL}/menus?page=1`)
       .then((res) => {
         const menus = res.data.rows;
-        // console.log(menus, 'ini fetch menus axios')
         this.setState({ menus });
       })
       .catch((err) => {
         console.log(err);
       });
+
+    axios
+      .get(`${API_URL}/categories/main`)
+      .then((res) => {
+        const category = res.data.map((el) => {
+          return el
+        });
+        console.log(category)
+        this.setState({ category });
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 
   render() {
-    const { menus } = this.state;
+    const { menus, category } = this.state;
     return (
       <div className="App">
         <NavbarComponent />
@@ -46,7 +60,7 @@ export default class App extends Component {
                 <Col>
                   <h1>Our Menu</h1>
                   <Row>
-                    <FilterButton />
+                    <FilterButton category={category} />
                   </Row>
                   <Row>
                     {menus &&
@@ -57,7 +71,11 @@ export default class App extends Component {
                 </Col>
               </Row>
             </Col>
+            <Row className="justify-content-center">
+              <PaginationComponent />
+            </Row>
           </Row>
+
         </Container>
       </div>
     );
