@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonGroup, Dropdown, Button } from 'react-bootstrap'
 
-const FilterButton = () => {
+const FilterButton = ({ category }) => {
     return (
         <Dropdown as={ButtonGroup}>
             <Button variant="success">Filter</Button>
@@ -9,9 +9,11 @@ const FilterButton = () => {
             <Dropdown.Toggle split variant="success" id="dropdown-split-basic" />
 
             <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                {category && category.map((el) => {
+                    return (
+                        <Dropdown.Item href={`http://localhost:3004/category/main/${el.id}`}>{el.name}</Dropdown.Item>
+                    )
+                })}
             </Dropdown.Menu>
         </Dropdown>
     )
