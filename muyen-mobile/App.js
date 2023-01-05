@@ -1,22 +1,30 @@
-import { StatusBar } from "expo-status-bar";
+// import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Dimensions,
+  Platform,
+  StatusBar,
+} from "react-native";
+
+import colors from "./app/config/colors";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Connected to android device</Text>
-      <Text>Anjaaay Muyen mobile</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text>Testing splash</Text>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fb2",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+    backgroundColor: colors.primary,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+})
