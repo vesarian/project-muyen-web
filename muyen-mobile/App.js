@@ -11,20 +11,19 @@ import {
 } from "react-native";
 
 import colors from "./app/config/colors";
+import HomeScreen from "./app/screens/HomeScreen";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Testing splash</Text>
-    </SafeAreaView>
+      <HomeScreen />
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: colors.primary,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: colors.primary,
+//     justifyContent: 'center',
+//     alignItems: 'center'
+//   }
+// })
